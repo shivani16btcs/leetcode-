@@ -1,5 +1,6 @@
 //link to the problem :  https://leetcode.com/explore/learn/card/linked-list/209/singly-linked-list/1290/
-
+// note: in this question 1 node at starting extra added we need to ignore it as per the ques requirement 
+// we ignore by  setting:  s=obj->next in starting
 
 typedef struct{
     int val;
