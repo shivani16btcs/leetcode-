@@ -73,8 +73,10 @@ void myLinkedListAddAtIndex(MyLinkedList* obj, int index, int val) {
                i++;
                s=s->next;
            }
-            node->next = p->next;
-            p->next = node;
+            if(i==index){
+                  node->next = p->next;
+                  p->next = node;
+            }
         }
 }
 
